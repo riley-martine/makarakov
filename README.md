@@ -35,3 +35,5 @@ Supports characters: Rose, Dirk, Vriska, Karkat, Roxy, Jade, Kanaya, Jane, Jake,
 - [ ] Code quality
 - [ ] Test python versions support
 - [ ] I wanna be a real python package!
+- [ ] Print some things while making models
+- [ ] Do some multiprocessing
