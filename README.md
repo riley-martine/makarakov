@@ -32,3 +32,5 @@ Supports characters: Rose, Dirk, Vriska, Karkat, Roxy, Jade, Kanaya, Jane, Jake,
 - [ ] Command-line tool (e.g makarakov karkat 100 -> 100 lines of karkat)
 - [ ] Nice refactoring
 - [ ] requirements.txt
+- [ ] Code quality
+- [ ] Test python versions support
