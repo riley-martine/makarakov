@@ -34,3 +34,4 @@ Supports characters: Rose, Dirk, Vriska, Karkat, Roxy, Jade, Kanaya, Jane, Jake,
 - [ ] requirements.txt
 - [ ] Code quality
 - [ ] Test python versions support
+- [ ] I wanna be a real python package!
