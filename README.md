@@ -7,7 +7,7 @@ Supports characters: Rose, Dirk, Vriska, Karkat, Roxy, Jade, Kanaya, Jane, Jake,
 
 
 ## Usage
-* Install dependencies (python3, bs4, markovify)
+* Install dependencies (python3, bs4, markovify, lxml)
 * Run scrape.py. This will take a while the first time while the models are generated. 
 * Follow onscreen prompts to select character.
 
