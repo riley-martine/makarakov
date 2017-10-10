@@ -9,9 +9,9 @@ def load_lines():
     if not os.path.exists("lines.pickle"):
         with open('archive.html', 'r') as f:
             soup = BeautifulSoup(f, 'lxml')
-        
+
         logs = soup.find_all("div", class_="log")
-        # we gotta get colors too :( 
+        # we gotta get colors too :(
         logtypes = ["pesterlog", "spritelog", "dialoglog", "sriousbiz"]
         logfilter = lambda log: (log.button and log.button.string in logtypes) or not log.button
         logs_filtered = filter(logfilter, logs)
