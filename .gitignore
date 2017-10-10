@@ -1,3 +1,4 @@
 lines.pickle
 *.swp
 models/
+*.pyc
