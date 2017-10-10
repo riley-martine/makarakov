@@ -129,17 +129,14 @@ def load_lines():
     return lines_small
 
 ###############MARKOVING BELOW#############
-class ListText(markovify.Text):
-    def sentence_split(self, text):
-        return text
-
 def make_markov(lines):
     if not os.path.isdir('models'):
         os.mkdir('models')
         os.chdir('models')
-    
-        models = {k: ListText(v, state_size=2) for k, v in lines.items()}
+   
+        models = {k: markovify.Text(v, state_size=2) for k, v in lines.items()}
         # Change state size to 2 or 3 depending on what u r looking for
+        
         models_json = {k: v.to_json() for k,v in models.items()}
     
         for k,v in models_json.items():
@@ -157,6 +154,7 @@ def make_markov(lines):
 ############USER INTERFACE BELOW################
 if __name__ == "__main__":
     models = make_markov(load_lines())
+    print(dir(models["Dave"]))
     key = ''
     while key != "STOP":
         try:
