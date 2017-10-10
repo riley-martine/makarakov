@@ -148,7 +148,7 @@ def make_markov(lines):
         for filename in os.listdir():
             with open(filename, 'r') as f:
                 contents = f.read()
-                models[filename.split('.')[0]] = ListText.from_json(contents)
+                models[filename.split('.')[0]] = markovify.Text.from_json(contents)
     return models
     
 ############USER INTERFACE BELOW################
