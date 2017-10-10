@@ -1,4 +1,7 @@
 # Makarakov
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fb5c09ba0d47446bbfdd3cfd2725ce90)](https://www.codacy.com/app/rmartine/makarakov?utm_source=github.com&utm_medium=referral&utm_content=riley-martine/makarakov&utm_campaign=badger)
+
 Markov chain trained on Homestuck full text.
 
 Data from [readmspa](http://readmspa.org/search/search=6.html), trained using [markovify](https://github.com/jsvine/markovify).
