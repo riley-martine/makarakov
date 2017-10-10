@@ -1,0 +1,48 @@
+/* minimal HTML5 reset */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, menu, form, fieldset, legend, figure, section, summary { margin: 0; padding: 0; }
+body { line-height: 1; position: relative; }
+article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+button, fieldset, iframe, img { border: 0; }
+
+/* default MSPA theme */
+body { background-color: #535353; text-align: center; padding-bottom: 20px; }
+body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+
+.admin { background-color: #eeeeee; font-size: 16px; padding: 1em;
+         border: solid 7px #c6c6c6; border-right: 0px; width: 90%;
+         margin: 0 auto 1em; line-height: normal; }
+
+/* default MSPA navigation menu bar */
+header nav {  min-width: 100%; width: 950px;  }
+header nav { font-size: 84%; padding-bottom: 1px; line-height: normal;
+             font-weight: bold; color: white; font-family: Arial; }
+header nav * { display: inline; }
+header nav ul:before { margin: 0 0.5em; vertical-align: middle; content: url(../../images/candycorn.gif); }
+header nav ul:first-child:before { margin: 0; content: none; }  /* avoid :not */
+header nav ul:nth-of-type(5n+2) a { color: #29ff4a; }
+header nav ul:nth-of-type(5n+3) a { color: #39d5f6; }
+header nav ul:nth-of-type(5n+4) a { color: #f7f72a; }
+header nav ul:nth-of-type(5n+5) a { color: #ffb529; }
+header nav li:before { content: '| '; }
+header nav li:first-child:before { content: none; } /* avoid :not */
+header nav a { text-transform: uppercase; color: inherit; }
+header nav li.options-menu { cursor: pointer; }
+header nav li.options-menu.white-glow { color: #f80; animation-duration: 0.5s;
+-webkit-animation-duration: 0.5s; }
+
+@keyframes white-glow { from { color: white; } }
+@-webkit-keyframes white-glow { from { color: white; } }
+.white-glow { animation: white-glow 0.05s infinite alternate;
+-webkit-animation: white-glow 0.05s infinite alternate; }
+
+/* call out links that take us back online */
+a[href^="http:"], a[href^="https:"], a[href^="mailto:"] { color: red; }
+
+.ad { background: transparent url(../../images/bannerframe.png) no-repeat; background-size: contain;
+      margin-left: auto; margin-right: auto; }
+.ad a { display: block; background: url(../images/ad.png) no-repeat; background-size: contain;
+        color: transparent; margin: auto; border: solid #535353 2px; }
+
+.ad { width: 950px; height: 110px; }
+.ad a { width: 728px; height: 103px; }
+

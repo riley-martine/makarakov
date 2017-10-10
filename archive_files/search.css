@@ -1,0 +1,56 @@
+section { font-size: 117%; font-weight: bold; }
+h1:first { font-family: courier, monospace; font-size: 333%; }
+.page h1 { margin-bottom: 0; font-size: 117%; }
+p { margin-bottom: 1em; }
+h2 { font-size: 100%; margin-bottom: 2em; }
+h1 a:before, h1 a:after { content: "\""; }
+.page pre, .transcript { font-family: monospace; font-weight: normal; 
+	  	         margin: -1em 1em 2em; border: solid black 1px; padding: 1em;
+			 white-space: pre-wrap; text-align: left; }
+.transcript { display: block !important; }
+.inline-transcript { display: inline !important; }
+.page pre.postlink, .transcript.postlink { margin-top: 1em; }
+.page span.alt { display: inline; border: solid gray 1px; }
+.page pre:before, .transcript:before {
+    display: block; background-color: #eeeeee; color: gray; font-size: 80%;
+    margin: -1.5em 0 0; padding: 0 0.5em; position: absolute; right: 8%; } 
+.page pre.alt:before, .transcript:before { content: "(text in media)"; }
+.bloody-scarf:before { font-size: 50%; }
+.page pre.title:before {  content: "(text on mouseover)"; }
+.transcript div.log { font-family: Verdana, Arial, Helvetica, sans-serif; 
+			    white-space: normal; text-align: center; padding: 0; }
+
+.transcript.dad-note { background-color: white; text-align: center;
+		       color: black; font-family: courier; font-weight: bold; }
+.transcript dt { font-style: italic; font-weight: bold; }
+.transcript mark { background: inherit; color: #FF8A00;
+		   font-size: 150%; text-shadow: 4px 1px 0 rgba( 255, 36, 0, 1); }
+.transcript dd { margin: -0.75em 0; }
+.transcript kbd, .transcript dd p { display: block; margin: -0.75em 0 0.25em; font-family: courier;
+	  			    padding: 0.5em; border: solid 0.3em; border-radius: 0.5em; }
+.transcript kbd { background-color: black; border-color: #ff9900; color: #bababa; max-width: 60%; }
+.transcript dd p { background-color: #d0d0d0; border-color: #b6b6b6; color: black; max-width: 80%; }
+.transcript dd p.tags { margin-top: -1.75em; }
+.transcript dd button { background: #48D94C; color: white; font-size: 125%;
+			border-width: 2px; border-color: #0FBC13; border-style: none none solid solid; }
+.walkaround em { text-decoration: underline; font-style: inherit; }
+
+.trkstr { color: white; background: #FA71F8;
+          animation: trkstr-txt 0.5s infinite;
+          -webkit-animation: trkstr-txt 0.5s infinite; }
+@keyframes trkstr-txt { 0% { color: #FED0D0; } 14% { color: #EBD4C1; } 28% { color: #F5ECC9; }
+  43% { color: #C5F0D6; } 57% { color: #CFF7FD; } 71% { color: #C9D3F5 } 86% { color: #D3B8E0; } }
+@-webkit-keyframes trkstr-txt { 0% { color: #FED0D0; } 14% { color: #EBD4C1; } 28% { color: #F5ECC9; }
+  43% { color: #C5F0D6; } 57% { color: #CFF7FD; } 71% { color: #C9D3F5 } 86% { color: #D3B8E0; } }
+.hope { font-size: 200%; font-weight: bold; text-shadow: 0 0.05em rgba( 24, 110, 0, 1 );
+	animation: hope-txt 0.2s infinite alternate;
+	-webkit-animation: hope-txt 0.2s infinite alternate; }
+@keyframes hope-txt { from { color: #1F9300 } to { color: #27B800 } }
+@-webkit-keyframes hope-txt { from { color: #1F9300 } to { color: #27B800 } }
+.bloody-scarf { background: #F20000; color: #008282; text-shadow: #405F5F -2px -2px; font-size: 250%;
+		width: 24ex; text-align: center; white-space: prewrap; padding: 0.5em; margin-top: 0; }
+.bloody-scarf h2 { font-size: 200%; margin: 0; }
+hr + .bloody-scarf { margin: -15px 2ex; border: none; position: relative; z-index: 1; }
+
+.page .prose, .page .log { font-weight: normal; padding: 0 2em; }
+.page { margin-bottom: 3em; }
